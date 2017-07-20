@@ -34,6 +34,41 @@ public class SingleLinkedListTraversal{
 	Node head;
 	
     /* method to create a simple linked list with 3 nodes*/
+	
+	
+	/* Three nodes have been allocated  dynamically.
+    We have refernces to these three blocks as first,  
+    second and third
+
+    llist.head        second              third
+       |                |                  |
+       |                |                  |
+   +----+------+     +----+------+     +----+------+
+   | 1  | null |     | 2  | null |     |  3 | null |
+   +----+------+     +----+------+     +----+------+ */
+	
+	
+	/*  Now next of first Node refers to second.  So they
+    both are linked.
+
+ llist.head        second              third
+    |                |                  |
+    |                |                  |
++----+------+     +----+------+     +----+------+
+| 1  |  o-------->| 2  | null |     |  3 | null |
++----+------+     +----+------+     +----+------+ */
+	
+	/*  Now next of second Node refers to third.  So all three
+    nodes are linked.
+
+ llist.head        second              third
+    |                |                  |
+    |                |                  |
++----+------+     +----+------+     +----+------+
+| 1  |  o-------->| 2  |  o-------->|  3 | null |
++----+------+     +----+------+     +----+------+ */
+	
+	
     public static void main(String[] args)
     {
         /* Start with the empty list. */
